@@ -1,0 +1,478 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Rafael Di Pietro</title>
+    <meta name="description" content="Portfólio de Rafael Di Pietro - Desenvolvedor Web e Designer de Experiências">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <input type="checkbox" id="theme-switch" class="theme-switch" aria-label="Alternar tema">
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">Rafael <span class="highlight">Di </span>Pietro</span>
+            </a>
+
+            <input type="checkbox" id="nav-menu-toggle" class="nav-menu-toggle" aria-label="Abrir menu">
+
+            <nav class="nav-links">
+                <a href="#home" class="nav-item active">Início</a>
+                <a href="#about" class="nav-item">Sobre</a>
+                <a href="#skills" class="nav-item">Habilidades</a>
+                <a href="#education" class="nav-item">Formação</a>
+                <a href="#projects" class="nav-item">Projetos</a>
+                <a href="#contact" class="nav-item">Contato</a>
+            </nav>
+
+            <label for="theme-switch" class="theme-toggle" aria-label="Alternar tema" title="Alternar tema">
+                <span class="css-icon icon-moon" aria-hidden="true"></span>
+                <span class="css-icon icon-sun" aria-hidden="true"></span>
+            </label>
+
+            <label for="nav-menu-toggle" class="mobile-menu-btn" aria-label="Menu" title="Menu">
+                <span class="css-icon icon-menu" aria-hidden="true"></span>
+            </label>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content fade-in-up">
+                    <span class="badge">Disponível para novos projetos</span>
+                    <h1 class="hero-title">
+                        Olá, eu sou <br>
+                        <span class="gradient-text glow-text">Rafael Di Pietro</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Desenvolvedor apaixonado por criar experiências digitais incríveis, focando em performance,
+                        acessibilidade e design de alto nível.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">Ver Projetos <span class="css-icon icon-arrow-right" aria-hidden="true"></span></a>
+                        <a href="#contact" class="btn btn-secondary">Falar Comigo</a>
+                    </div>
+                </div>
+
+                <div class="hero-image fade-in-up delay-1">
+                    <div class="image-wrapper glow-box-strong">
+                        <img src="/assets/profile.png" alt="Rafael Di Pietro" class="profile-img">
+                        <div class="floating-badge badge-1">
+                            <span class="css-icon icon-code" aria-hidden="true"></span> Clean Code
+                        </div>
+                        <div class="floating-badge badge-2">
+                            <span class="css-icon icon-layout" aria-hidden="true"></span> UI/UX
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <a href="#about" aria-label="Rolar para baixo">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="section-container">
+                <div class="about-grid">
+                    <!-- Terminal Column -->
+                    <div class="about-terminal fade-in-up">
+                        <div class="terminal-window">
+                            <div class="terminal-header">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="terminal-body">
+                                <div class="terminal-line"><span class="prompt">&gt;</span> <span
+                                        class="keyword">const</span> <span class="variable">developer</span> = <span
+                                        class="keyword">new</span> <span class="class">Developer</span>(<span
+                                        class="string">'Rafael'</span>);</div>
+                                <div class="terminal-line"><span class="prompt">&gt;</span> <span
+                                        class="variable">developer</span>.<span class="property">skills</span>.<span
+                                        class="method">push</span>(<span class="string">'Multiplataforma'</span>);</div>
+                                <div class="terminal-line"><span class="prompt">&gt;</span> <span
+                                        class="variable">developer</span>.<span class="property">passion</span> = <span
+                                        class="string">'Criar soluções'</span>;</div>
+                                <div class="terminal-line"><span class="prompt">&gt;</span> <span
+                                        class="variable">developer</span>.<span class="method">execute</span>();</div>
+                                <div class="terminal-line output">Building experiences...</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text Column -->
+                    <div class="about-content fade-in-up delay-1">
+                        <h2 class="section-title">Sobre Mim<div class="title-underline"></div>
+                        </h2>
+                        <div class="about-text">
+                            <p>Sou Rafael Di Pietro Gerzeli, estudante de Desenvolvimento de Software Multiplataforma
+                                com paixão por criar soluções tecnológicas que realmente funcionam na vida das pessoas.
+                                Acredito que bom software vai além do código: é sobre entender o problema, pensar na
+                                experiência do usuário e entregar algo que agregue valor real.</p>
+                            <p>Tenho me dedicado ao desenvolvimento mobile, web e desktop, sempre buscando unir técnica
+                                com criatividade. Sou movido por desafios, aprendo rápido e gosto de trabalhar em equipe
+                                — porque as melhores soluções surgem da colaboração.</p>
+                        </div>
+
+                        <div class="about-cards">
+                            <div class="about-card">
+                                <span class="css-icon icon-layout card-icon" aria-hidden="true"></span>
+                                <h4>Multiplataforma</h4>
+                                <p>Desenvolvimento para web, mobile e desktop</p>
+                            </div>
+                            <div class="about-card">
+                                <span class="css-icon icon-target card-icon" aria-hidden="true"></span>
+                                <h4>Orientado a Resultados</h4>
+                                <p>Foco em soluções que geram valor real</p>
+                            </div>
+                            <div class="about-card">
+                                <span class="css-icon icon-book card-icon" aria-hidden="true"></span>
+                                <h4>Aprendizado Contínuo</h4>
+                                <p>Sempre evoluindo com novas tecnologias</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section bg-alt">
+            <div class="section-container">
+                <h2 class="section-title fade-in-up">Habilidades <span class="highlight">Técnicas</span>
+                    <div class="title-underline"></div>
+                </h2>
+
+                <div class="skills-split-grid">
+                    <!-- Left Column: Linguagens & Core -->
+                    <div class="skills-column fade-in-up delay-1">
+                        <h3 class="skills-subtitle"><span class="css-icon icon-code" aria-hidden="true"></span> Linguagens & Core</h3>
+
+                        <div class="progress-container">
+                            <div class="progress-item">
+                                <div class="progress-header">
+                                    <span class="progress-name">JavaScript / TypeScript</span>
+                                    <span class="progress-percent">75%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-header">
+                                    <span class="progress-name">React / React Native</span>
+                                    <span class="progress-percent">70%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-header">
+                                    <span class="progress-name">Python</span>
+                                    <span class="progress-percent">65%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 65%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-header">
+                                    <span class="progress-name">Node.js</span>
+                                    <span class="progress-percent">60%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-header">
+                                    <span class="progress-name">Flutter</span>
+                                    <span class="progress-percent">55%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 55%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-header">
+                                    <span class="progress-name">SQL (PostgreSQL, SQLite)</span>
+                                    <span class="progress-percent">70%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Ecossistema -->
+                    <div class="skills-column fade-in-up delay-2">
+                        <h3 class="skills-subtitle"><span class="css-icon icon-layers" aria-hidden="true"></span> Ecossistema</h3>
+
+                        <div class="ecosystem-container">
+                            <div class="ecosystem-group">
+                                <h4 class="ecosystem-title">MOBILE</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag-simple">React Native</span>
+                                    <span class="skill-tag-simple">Flutter</span>
+                                    <span class="skill-tag-simple">Expo</span>
+                                </div>
+                            </div>
+                            <div class="ecosystem-group">
+                                <h4 class="ecosystem-title">WEB</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag-simple">React</span>
+                                    <span class="skill-tag-simple">HTML5</span>
+                                    <span class="skill-tag-simple">CSS3</span>
+                                    <span class="skill-tag-simple">Node.js</span>
+                                    <span class="skill-tag-simple">Express</span>
+                                </div>
+                            </div>
+                            <div class="ecosystem-group">
+                                <h4 class="ecosystem-title">DESKTOP</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag-simple">Python</span>
+                                    <span class="skill-tag-simple">Tkinter</span>
+                                    <span class="skill-tag-simple">Electron</span>
+                                </div>
+                            </div>
+                            <div class="ecosystem-group">
+                                <h4 class="ecosystem-title">BANCO DE DADOS</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag-simple">PostgreSQL</span>
+                                    <span class="skill-tag-simple">MongoDB</span>
+                                    <span class="skill-tag-simple">Firebase</span>
+                                    <span class="skill-tag-simple">SQLite</span>
+                                </div>
+                            </div>
+                            <div class="ecosystem-group">
+                                <h4 class="ecosystem-title">FERRAMENTAS</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag-simple">Git</span>
+                                    <span class="skill-tag-simple">GitHub</span>
+                                    <span class="skill-tag-simple">VS Code</span>
+                                    <span class="skill-tag-simple">Figma</span>
+                                    <span class="skill-tag-simple">Docker</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education section">
+            <div class="section-container">
+                <h2 class="section-title fade-in-up">Formação & <span class="highlight">Trajetória</span>
+                    <div class="title-underline"></div>
+                </h2>
+
+                <div class="education-grid">
+                    <!-- Academic -->
+                    <div class="education-column fade-in-up delay-1">
+                        <h3 class="education-subtitle"><span class="css-icon icon-book" aria-hidden="true"></span> Formação Acadêmica</h3>
+
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content card-bg">
+                                    <div class="timeline-header">
+                                        <span class="badge-outline">2026 - 2028</span>
+                                        <span class="badge-solid green">Em andamento</span>
+                                    </div>
+                                    <h4 class="timeline-title">Desenvolvimento de Software Multiplataforma</h4>
+                                    <p class="timeline-subtitle">FATEC</p>
+                                    <p class="timeline-desc">Formação técnica em desenvolvimento mobile, web e desktop.
+                                        Foco em criar soluções completas para diferentes plataformas.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content card-bg">
+                                    <div class="timeline-header">
+                                        <span class="badge-outline cyan">Concluído</span>
+                                        <span class="badge-solid dark">Concluído</span>
+                                    </div>
+                                    <h4 class="timeline-title">Direito</h4>
+                                    <p class="timeline-subtitle">Graduação em Direito</p>
+                                    <p class="timeline-desc">Formação jurídica completa. Base sólida para unir
+                                        tecnologia e segurança jurídica nas soluções desenvolvidas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Diferencial -->
+                    <div class="education-column fade-in-up delay-2">
+                        <h3 class="education-subtitle"><span class="css-icon icon-crosshair" aria-hidden="true"></span> Diferencial</h3>
+                        <div class="diferencial-card card-bg">
+                            <p class="diferencial-intro">Sou <strong>Advogado</strong> cursando minha segunda graduação
+                                em tecnologia — uma combinação que entrega mais do que apenas código.</p>
+                            <p class="diferencial-text">Meu background jurídico me permite desenvolver soluções com
+                                maior <span class="highlight">segurança</span>, compreender contratos e conformidade, e
+                                garantir que o software funcione não só tecnicamente, mas também dentro das regras que
+                                protegem o cliente.</p>
+
+                            <ul class="diferencial-list">
+                                <li class="diferencial-item">
+                                    <span class="diferencial-icon yellow"><span class="css-icon icon-scale" aria-hidden="true"></span></span>
+                                    <div>
+                                        <strong>Visão Jurídica</strong>
+                                        <span>Conformidade, contratos e proteção de dados</span>
+                                    </div>
+                                </li>
+                                <li class="diferencial-item">
+                                    <span class="diferencial-icon yellow"><span class="css-icon icon-lock" aria-hidden="true"></span></span>
+                                    <div>
+                                        <strong>Segurança e Responsabilidade</strong>
+                                        <span>Software robusto com consciência legal</span>
+                                    </div>
+                                </li>
+                                <li class="diferencial-item">
+                                    <span class="diferencial-icon red"><span class="css-icon icon-target" aria-hidden="true"></span></span>
+                                    <div>
+                                        <strong>Resultado Concreto</strong>
+                                        <span>Foco no valor real para quem confia no trabalho</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+
+            <div class="section-container">
+
+                <h2 class="section-title fade-in-up">
+                    Projetos <span class="highlight">Recentes</span>
+                </h2>
+
+                <p class="projects-subtitle fade-in-up delay-1">
+                    Alguns dos projetos mais recentes que venho desenvolvendo, com foco em qualidade técnica,
+                    experiência do usuário e arquitetura bem estruturada.
+                </p>
+
+                <div class="projects-grid">
+
+                    <!-- Projeto 1 -->
+                    <article class="project-card fade-in-up delay-1">
+
+                        <div class="project-img-wrapper">
+                            <img src="/assets/CatchBuddies3.png" alt="Catch Buddy" class="project-img">
+
+                            <div class="project-overlay">
+                                <a href="https://projeto-integrador-catch-buddy.vercel.app/" target="_blank" class="btn-icon">
+                                    <span class="css-icon icon-github" aria-hidden="true"></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-info">
+
+                            <h3 class="project-title">Catch Buddy</h3>
+
+                            <p class="project-desc">
+                                Aplicativo de socialização gamificado que utiliza mecânicas inspiradas em jogos de
+                                localização para promover encontros entre amigos e novas conexões.
+                            </p>
+
+                            <a href="https://projeto-integrador-catch-buddy.vercel.app/" target="_blank" class="btn-project">
+                                Ver Online
+                            </a>
+
+                        </div>
+                    </article>
+
+
+                    <!-- Projeto 2 -->
+                    <article class="project-card fade-in-up delay-2">
+
+                        <div class="project-img-wrapper">
+                            <img src="/assets/BOEescolar.png" alt="BOE Escolar" class="project-img">
+
+                            <div class="project-overlay">
+                                <a href="https://github.com/rafaeldipietrogerzeli/ProjetoCassio/tree/main"
+                                    target="_blank" class="btn-icon">
+                                    <span class="css-icon icon-github" aria-hidden="true"></span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-info">
+
+                            <h3 class="project-title">BOE Escolar</h3>
+
+                            <p class="project-desc">
+                                Sistema para registro e gerenciamento de ocorrências escolares graves, focado em
+                                organização, rastreabilidade e apoio à tomada de decisão institucional.
+                            </p>
+
+                            <a href="https://github.com/rafaeldipietrogerzeli/ProjetoCassio/tree/main" target="_blank"
+                                class="btn-project">
+                                Ver no GitHub
+                            </a>
+
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section bg-alt">
+            <div class="section-container text-center fade-in-up">
+                <h2 class="section-title">Vamos <span class="highlight">Conversar?</span></h2>
+                <p class="contact-subtitle">Estou sempre aberto a discutir desenvolvimento de produtos, parcerias ou
+                    oportunidades.</p>
+
+                <a href="mailto:contato@rafaeldipietro.com" class="btn btn-primary contact-btn">
+                    <span class="css-icon icon-mail" aria-hidden="true"></span> Diga Olá
+                </a>
+
+                <div class="social-links">
+                    <a href="www.linkedin.com/in/rafaeldipietro" class="social-icon" aria-label="LinkedIn"><span class="css-icon icon-linkedin" aria-hidden="true"></span></a>
+                    <a href="https://github.com/rafaeldipietrogerzeli" class="social-icon" aria-label="GitHub"><span class="css-icon icon-github" aria-hidden="true"></span></a>
+                    <a href="#" class="social-icon" aria-label="Twitter"><span class="css-icon icon-twitter" aria-hidden="true"></span></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><span class="css-icon icon-instagram" aria-hidden="true"></span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Rafael Di Pietro. Todos os direitos reservados.</p>
+            <p class="footer-stack">Desenvolvido com <span class="highlight">HTML e CSS puros</span>.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
